@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <style>
+    		.mui-slider-item img{
+    			width: 400px;
+    			height: 210px;
+    		}
+    		.mui-card{
+    			width: 100%;
+    			margin: 0;
+    			padding: 0;
+    		}
+    </style>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+      	mui.plusReady(function(){
+      		//获得slider插件对象
+			var gallery = mui('.mui-slider');
+			gallery.slider({
+			  interval:3000//自动轮播周期，若为0则不自动播放，默认为0；
+			});
+      	});
+    </script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	    <h1 class="mui-title">门徒</h1>
+	</header>
+	<div class="mui-content">
+		<!--
+        	作者：yangyu3230@126.com
+        	时间：2017-03-24
+        	描述：图片轮播
+        -->
+        <div class="mui-slider">
+		  <div class="mui-slider-group mui-slider-loop">
+		    <!--支持循环，需要重复图片节点-->
+		    <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="image/4.jpg" /></a></div>
+		    <div class="mui-slider-item"><a href="#"><img src="image/1.jpg" /></a></div>
+		    <div class="mui-slider-item"><a href="#"><img src="image/2.jpg" /></a></div>
+		    <div class="mui-slider-item"><a href="#"><img src="image/3.jpg" /></a></div>
+		    <div class="mui-slider-item"><a href="#"><img src="image/4.jpg" /></a></div>
+		    <!--支持循环，需要重复图片节点-->
+		    <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="1.jpg" /></a></div>
+		  </div>
+		</div>
+		
+	    <ul class="mui-table-view">
+	        <li class="mui-table-view-cell mui-media">
+	            <a href="javascript:;">
+	                <img class="mui-media-object mui-pull-left" src="http://placehold.it/40x30">
+	                <div class="mui-media-body">
+	                    幸福
+	                    <p class="mui-ellipsis">在这个怀疑的时代，我们依然需要信仰</p>
+	                </div>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell mui-media">
+	            <a href="javascript:;">
+	                <img class="mui-media-object mui-pull-left" src="http://placehold.it/40x30">
+	                <div class="mui-media-body">
+	                    木屋
+	                    <p class="mui-ellipsis">想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.</p>
+	                </div>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell mui-media">
+	            <a href="javascript:;">
+	                <img class="mui-media-object mui-pull-left" src="http://placehold.it/40x30">
+	                <div class="mui-media-body">
+	                    百年孤独
+	                    <p class="mui-ellipsis">某天，你无端想起一个人，她曾让你对明天有所期许，但是却完全没有出现在你的明天里</p>
+	                </div>
+	            </a>
+	        </li>
+	    </ul>
+	    <div class="mui-card">
+			<!--页眉，放置标题-->
+			<div class="mui-card-header mui-card-media">
+				<img src="image/9.jpg" />
+				<div class="mui-media-body">
+					我曾七次鄙视我的灵魂
+					<p>发表于 2017-03-23 15:30</p>
+				</div>
+			</div>
+			<!--内容区-->
+			<div class="mui-card-content">
+				<img src="image/7.jpg" width="400px" height="300px"/>
+			</div>
+			<!--页脚，放置补充信息或支持的操作-->
+			<div class="mui-card-footer">
+				<br>第一次，当它本可进取时，却故作谦卑；
+				<br>第二次，当它在空虚时，用爱欲来填充；
+				<br>第三次，在困难和容易之间，它选择了容易；
+				<br>第四次，它犯了错，却借由别人也会犯错来宽慰自己；
+				<br>第五次，它因为软弱而忍让，却坚称为自己的坚韧时；
+				<br>第六次，当它鄙夷一张丑恶的嘴脸时，却不知那正是自己面具中的一副；
+				<br>第七次，当它侧身于生活的污泥中，虽不甘心，却又畏首畏尾
+			</div>
+		</div>
+	    <ul class="mui-table-view mui-grid-view">
+	        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+	            <a href="#">
+	                <img class="mui-media-object" src="http://placehold.it/400x300">
+	                <div class="mui-media-body">岁月不饶人</div>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+	            <a href="#">
+	                <img class="mui-media-object" src="http://placehold.it/400x300">
+	                <div class="mui-media-body">我亦未曾饶过岁月</div>
+	            </a>
+	        </li>
+	    </ul>
+	   	 
+	</div>
+
+</body>
+</html>
